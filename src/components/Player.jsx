@@ -1,3 +1,4 @@
+import { usePlayerStore } from '@/store/playerStore'
 import { useState, useRef, useEffect } from 'react'
 
 export const Pause = () => (
@@ -18,7 +19,7 @@ export const Volume = () => (
 
 export function Player() {
 
-    const [isPlaying, setIsPlaying] = useState(false)
+    const { isPlaying, setIsPlaying } = usePlayerStore(state => state)
     const [currentSong, setCurrentSong] = useState(null)
     const audioRef = useRef()
 
