@@ -13,3 +13,4 @@ This is a clone of the Spotify web app. It was created using Astro 3, React JS, 
 > - ***transition:name*** es el nombre de la transicion que se va a ejecutar
 > - ***transition:persist*** es para que el componente persista al navegar entre paginas
 > 3) **zustand** es una libreria para manejar el estado global de la aplicacion. Usada en `/src/store/playerStore.js` para manejar el estado del reproductor de musica
+> `pnpm astro preferences disable devToolbar` --> Deshabilitar la barra de herramientas de desarrollo
